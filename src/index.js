@@ -9,15 +9,18 @@ import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-   import Page1 from "./SignIn";
-   import Page2 from "./SignUp";
-
+import Page1 from  "./Testimonial";
+import Page2 from "./SignUp";
+   import Page3 from "./SignIn";
+  
+   
     const rootElement = document.getElementById("root");
     ReactDOM.render(
       <BrowserRouter>
        <Switch>
         <Route exact path="/" component={Page1} />
         <Route path="/Home" component={Page2} />
+        <Route path="/SignIn" component={Page3} />
       </Switch>
       </BrowserRouter>,
       rootElement
@@ -27,3 +30,4 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
